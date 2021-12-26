@@ -28,7 +28,7 @@
     <span v-if="mode === 'typing'">
     <div v-show="$q.platform.is.mobile" class="q-ma-sm">
      <small>Use <img src="../statics/touch-keyboard.png" width="20px"/> key to change keyboard. </small>
-    <q-btn class="q-ma-sm" :dense="$q.platform.is.mobile" color="grey-6" v-if="layout=='sharada_unicode_phonetic'" @click="openURL('https://virtualvinodh.github.io/satisarsharada/keyboard.htm')">
+    <q-btn class="q-ma-sm" :dense="$q.platform.is.mobile" color="grey-6" v-if="layout=='grantha_unicode_phonetic'" @click="openURL('https://virtualvinodh.github.io/grantha-keyman-keyboards/src/keyboard_phonetic.htm')">
       Phon. Keymap
     </q-btn>
     </div>
@@ -43,7 +43,7 @@
         {label: 'Inscript', value: 'grantha_inscript'}
       ]"
     />
-    <q-btn class="q-ma-sm" color="grey-6" v-show="layout=='grantha_unicode_phonetic' && $q.platform.is.desktop" @click="openURL('https://virtualvinodh.github.io/satisarsharada/keyboard.htm')">
+    <q-btn class="q-ma-sm" color="grey-6" v-show="layout=='grantha_unicode_phonetic' && $q.platform.is.desktop" @click="openURL('https://virtualvinodh.github.io/grantha-keyman-keyboards/src/keyboard_phonetic.htm')">
       Phonetic Keymap
     </q-btn>
     <q-btn label="Display Keyboard" v-if="layout=='grantha_inscript'" @click="displayKeyboard" class="desktop-only"/>
@@ -56,7 +56,7 @@
       :style="mode == 'typing' ? {'font-size': fontSize + 'px', 'font-feature-settings':  styleCss} : ''" rows="4"
       autofocus v-if="!$q.platform.is.mobile" :class= "font"/>
       <textarea v-model="textInput" class="textarea_input" id="textmobile"
-      :style="mode == 'typing' ? {'font-size': 10 + 'px', 'font-feature-settings': styleCss} : ''" rows="4"
+      :style="mode == 'typing' ? {'font-size': 15 + 'px', 'font-feature-settings': styleCss} : ''" rows="4"
       autofocus v-else :class= "font"/>
      </div>
      <div class="q-ml-md mobile-only">
@@ -504,9 +504,9 @@ export default {
     printDocument: function () {
       this.$q.notify({
         type: 'info',
-        message: 'PDF is being generated. Please wait. Due to technical issues, PDF will only be generated using the Paalai font.',
+        message: 'PDF is being generated. Please wait. Due to technical issues, the PDF generated will be based only on the Paalai font.',
         position: 'center',
-        timeout: 2000
+        timeout: 4000
       })
       var docDefinition = {
         content: {
@@ -516,7 +516,7 @@ export default {
         }
       }
 
-      if (this.font === 'granthasans') {
+      /* if (this.font === 'granthasans') {
         pdfMake.fonts = {
           Roboto: {
             normal: 'https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-notomirror/merged/NotoSansGrantha-Regular.ttf',
@@ -543,13 +543,29 @@ export default {
           }
         }
       }
-      if (this.font === 'sampradaya') {
+      if (this.font === 'kurukkal') {
+        pdfMake.fonts = {
+          Roboto: {
+            normal: 'https://cdn.jsdelivr.net/gh/virtualvinodh/virtualvinodhsite/src/assets/kurukkal_unicode.ttf',
+            bold: 'https://cdn.jsdelivr.net/gh/virtualvinodh/virtualvinodhsite/src/assets/kurukkal_unicode.ttf',
+            italics: 'https://cdn.jsdelivr.net/gh/virtualvinodh/virtualvinodhsite/src/assets/kurukkal_unicode.ttf'
+          }
+        }
+      }
+      if (this.font === 'sampradaya' || this.font === 'paalai') {
         pdfMake.fonts = {
           Roboto: {
             normal: 'https://cdn.jsdelivr.net/gh/virtualvinodh/virtualvinodhsite/src/assets/sampradaya.ttf',
             bold: 'https://cdn.jsdelivr.net/gh/virtualvinodh/virtualvinodhsite/src/assets/sampradaya.ttf',
             italics: 'https://cdn.jsdelivr.net/gh/virtualvinodh/virtualvinodhsite/src/assets/sampradaya.ttf'
           }
+        }
+      } */
+      pdfMake.fonts = {
+        Roboto: {
+          normal: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.ttf',
+          bold: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.ttf',
+          italics: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.ttf'
         }
       }
       pdfMake.createPdf(docDefinition).download('out.pdf')
