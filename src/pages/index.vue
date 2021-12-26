@@ -177,7 +177,7 @@ export default {
           value: 'kurukkal'
         },
         {
-          label: 'Kuchitapada',
+          label: 'Kunchitapada',
           value: 'kunchitapada'
         },
         {
@@ -563,9 +563,9 @@ export default {
       } */
       pdfMake.fonts = {
         Roboto: {
-          normal: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.ttf',
-          bold: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.ttf',
-          italics: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.ttf'
+          normal: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.otf',
+          bold: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.otf',
+          italics: 'https://cdn.jsdelivr.net/gh/virtualvinodh/granthavarman/src/statics/Paalai.otf'
         }
       }
       pdfMake.createPdf(docDefinition).download('out.pdf')
