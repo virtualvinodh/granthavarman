@@ -32,7 +32,7 @@ export const ScriptMixin = {
       confusables: ['अ क ञ'.split(' '), 'इ ङ'.split(' '), 'उ द ओ'.split(' '), 'ख प व'.split(' '), 'य ध थ'.split(' ')],
       variantsCompounds: 'ङा जा टा णा कु कू कृ कॄ कॢ कॣ गु गू झु झू डु डू तु तू भु भू रु ळु ळू शु शू प्रु प्रू'.split(' '),
       sampleCompound: 'ग् गा गि गी गु गू गृ गॄ गॢ गॣ गे गै गो गौ गं गः गँ'.split(' '),
-      secondCons: 'क्ष क्त ञ्च ज्ञ ज्ज त्थ त्व न्थ न्द न्ध न्म न्व श्च ष्ट ह्म त्र'.split(' '),
+      secondCons: 'क्ष क्त ञ्च ज्ञ ज्ज त्थ त्व न्थ न्द न्ध न्म न्व श्च ष्ट ह्म त्र श्र'.split(' '),
       firstCons: 'ञ्च ज्ञ न्त न्न द्ध द्व म्म'.split(' '),
       special: 'र्क क्र क्य र्क्य'.split(' '),
       purecons: 'न् म् त्'.split(' '),
