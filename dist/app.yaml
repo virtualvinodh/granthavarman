@@ -1,0 +1,36 @@
+runtime: python37
+env: standard
+instance_class: F1
+handlers:
+  - url: /
+    static_files: spa-mat/index.html
+    upload: spa-mat/index.html
+  - url: /statics/(.*)
+    static_files: spa-mat/statics/\1
+    upload: spa-mat/statics/(.*)
+  - url: /img/(.*)
+    static_files: spa-mat/img/\1
+    upload: spa-mat/img/(.*)
+  - url: /(.*css)
+    static_files: spa-mat/\1
+    upload: spa-mat/(.*css)
+  - url: /js/(.*)
+    static_files: spa-mat/js/\1
+    upload: spa-mat/js/(.*)
+  - url: /fonts/(.*)
+    static_files: spa-mat/fonts/\1
+    upload: spa-mat/fonts/(.*)
+  - url: '/#/.*'
+    static_files: spa-mat/index2.html
+    upload: spa-mat/index2.html
+  - url: /.*
+    static_files: spa-mat/index.html
+    upload: spa-mat/index.html
+  - url: .*
+    script: auto
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+service_account: granthavarman@appspot.gserviceaccount.com
