@@ -261,15 +261,15 @@ export default {
 }
 @font-face {
   font-family: 'Satisar Sharada';
-  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-notomirror/merged/NotoSansGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/full/ttf/NotoSansGrantha-Regular.ttf');
 }
 @font-face {
   font-family: 'Noto Sans Devanagari';
-  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-notomirror/merged/NotoSansDevanagari-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Regular.ttf');
 }
 @font-face {
   font-family: 'Noto Sans Tamil';
-  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-notomirror/merged/NotoSansTamil-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTamil/full/ttf/NotoSansTamil-Regular.ttf');
 }
 @font-face {
   font-family: 'Agastya Sans';
@@ -288,12 +288,12 @@ export default {
 
 @font-face {
   font-family: 'Noto Serif Grantha';
-  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-notomirror/merged/NotoSerifGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifGrantha/full/ttf/NotoSerifGrantha-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Noto Sans Grantha';
-  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-notomirror/merged/NotoSansGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/full/ttf/NotoSansGrantha-Regular.ttf');
 }
 
 @font-face {
