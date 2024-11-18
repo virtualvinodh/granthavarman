@@ -259,10 +259,12 @@ export default {
 .compact {
   font-feature-settings: "ss01";
 }
+
 @font-face {
   font-family: 'Satisar Sharada';
   src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/full/ttf/NotoSansGrantha-Regular.ttf');
 }
+
 @font-face {
   font-family: 'Noto Sans Devanagari';
   src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Regular.ttf');
@@ -288,12 +290,12 @@ export default {
 
 @font-face {
   font-family: 'Noto Serif Grantha';
-  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifGrantha/full/ttf/NotoSerifGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifGrantha/hinted/ttf/NotoSerifGrantha-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Noto Sans Grantha';
-  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/full/ttf/NotoSansGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/hinted/ttf/NotoSansGrantha-Regular.ttf');
 }
 
 @font-face {
