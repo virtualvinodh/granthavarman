@@ -262,7 +262,7 @@ export default {
 
 @font-face {
   font-family: 'Satisar Sharada';
-  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/hinted/ttf/NotoSansGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-fonts/NotoSansGrantha-RegularZach.otf');
 }
 
 @font-face {
@@ -295,7 +295,7 @@ export default {
 
 @font-face {
   font-family: 'Noto Sans Grantha';
-  src: url('https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansGrantha/hinted/ttf/NotoSansGrantha-Regular.ttf');
+  src: url('https://cdn.jsdelivr.net/gh/virtualvinodh/aksharamukha-fonts/NotoSansGrantha-RegularZach.otf');
 }
 
 @font-face {
